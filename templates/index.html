@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title class="title">Depression Detection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename ='css/index.css') }}"/>
+</head>
+<body>
+    <!-- Sidebar -->
+    <div style="color:#ffffcc">
+        <form action="{{ url_for('predict')}}" method="post">
+            <br><br><br><br><br>
+            <h1><i>Depression Detection</i></h1>
+            <br><br>
+            <p>
+                Let's find whether you are Depressed or Not .<br>
+            <br>------------------------------------------------<br><br>
+            </p>
+            <h3><strong>Enter Your Message</strong></h3><br>
+            <textarea cols="50" rows="10" type="text" name="mood_pred" style="background-color: transparent;"></textarea><br>
+            <br><br><button class="button" type="submit "><i>Depression Check</i></button>
+        </form>
+    
+       <br><br><h2>{{ pred }}</h2>
+    </div>
+</body>
+</html>

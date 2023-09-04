@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>Depression Detection</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename ='css/welcome.css') }}"/>
+    </head>
+    <body>
+    <section id="banner">
+        <div class="banner-text"><br><br><br>
+            <h1><b>Depression Detection System</b></h1><br><br><br>
+            <p>"There is hope, even when your brain tells you there isn’t."</p>
+            <br><br><br><br><br>
+            <div class="banner-btn">
+                <a href="{{ url_for('test')}}"><span></span>Test Yourself</a>
+                <a href="{{ url_for('about')}}"><span></span>About</a>
+            </div>  
+        </div>      
+    </section>
+    </body>
+</html>
